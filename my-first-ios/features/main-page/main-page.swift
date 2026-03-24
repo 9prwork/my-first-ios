@@ -26,6 +26,7 @@ struct MainPage:View {
         AppBarView()
         contentView()
         BottomNavBar(selectedIndex:$selectedIndex)
+
     }
     
     
@@ -66,13 +67,6 @@ struct BottomNavBar: View {
 }
 
 
-struct HomeView: View {
-    var body: some View {
-        Text("Home")
-            .frame(maxWidth: .infinity, maxHeight: .infinity)
-    }
-}
-
 struct ProfileView: View {
     var body: some View {
         Text("Profile")
@@ -89,6 +83,7 @@ struct SettingsView: View {
 
 
 #Preview {
+//    AppBarView()
     MainPage()
 }
 
